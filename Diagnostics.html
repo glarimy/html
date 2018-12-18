@@ -8,40 +8,44 @@
     <h2>Data format for Diagnostics</h2>
     <form>
 <table border="1">
+    <tbody>
     <tr>
-        <td colspan="5">data for diagnostics</td>
+        <td colspan="5">Data for Diagnostics</td>
     </tr>
     <tr>
-        <th>Name of centre</th>
-        <td width="400" colspan="3">
-            <input type="text" name="nameofthecenter"/>
-        </td>
+        <td>Name of centre</td>
+        <td colspan="3"> <input type="text" name="nameofthecenter"/> </td>
     </tr>
-<tr>
-    <th>Address</th>
-    <td>city/town/village</td>
-    <td width="50"></td>
-    <td>pincode</td>
+    <tr>
+            <td rowspan="3">Address</td>
+            <td colspan="2"><input type='text' name='address'/></td>
+        </tr>
+        <tr>
+            <td>City/Town/Villege</td>
+            <td><input type='text' name='name'/></td>
+        </tr>
+        <tr>
+            <td>PINCODE</td>
+            <td><input type='text' name='name'/></td>
+        </tr>
+    <td>Year of establishment</td>
+    <td colspan="3"><input type="text" name="nameofthecenter"/></td>
 </tr>
 <tr>
-    <th>Year of establishment</th>
-    <td width="400" colspan="3"><input type="text" name="nameofthecenter"/></td>
+    <td>Contact Phone Number</td>
+    <td colspan="3"><input type="text" name="Contact Phone number"/></td>
 </tr>
 <tr>
-    <th>contact phone number</th>
-    <td width="400" colspan="3"></td>
+    <td>Contact Email Id:</td>
+    <td colspan="3"><input type="text" name="contact Email Id"/></td\>
 </tr>
 <tr>
-    <th>contact Email Id:</th>
-    <th width="400" colspan="3"></th>
+    <td>Website Url</th>
+    <td colspan="3"><input type="text" name="website url"/></td>
 </tr>
 <tr>
-    <th>website url</th>
-    <td width="400" colspan="3"><input type="text" name="website url"/></td>
-</tr>
-<tr>
-    <th>Speciallites</th>
-    <td width="400" colspan="3">
+    <td>Speciallites</td>
+    <td colspan="3">
         <input type="checkbox" name="speciallites"/>Blood Test 
         <input type="checkbox"  name="speciallites"/>x-ray 
         <input type="checkbox"  name="speciallites"/>CT 
@@ -51,28 +55,45 @@
     </td>
 </tr>
 <tr>
-    <th>Weekly hoildays</th>
-    <td width="400" colspan="3">Sunday monday tuesday wednesday thursday friday saturday</td>
+    <td>Weekly Hoildays</td>
+    <td colspan="3">
+            <input type='checkbox' name='weekly hoilday' value='Sunday'>Sunday
+            <input type='checkbox' name='weekly hoilday' value='Monday'>Monday
+            <input type='checkbox' name='weekly hoilday' value='Tuesday'>Tuesday
+            <input type='checkbox' name='weekly hoilday' value='Wednesday'>Wednesday
+            <input type='checkbox' name='weekly hoilday' value='Thursday'>Thursday
+            <input type='checkbox' name='weekly hoilday' value='Friday'>Friday
+            <input type='checkbox' name='weekly hoilday' value='Saturday'>Saturday
 </tr>
 <tr>
-    <th>Working hour</th>
-    <td width="400" colspan="3">
+    <td>Working Hours</td>
+    <td colspan="3">
         <input type="radio" name="workinghours"/>24x7 
-        <input type="radio"  name="workinghours"/>specify time
+        <input type="radio"  name="workinghours"/>Specify time
     </td>
 </tr>
 <tr>
-    <th>facillites</th>
-    <td width="400" colspan="3">sample collection at home,Comprehensive Health Check </td>
+    <td>Facillites</td>
+    <td colspan="3">
+        <input type="radio" name="Facillites"/>Sample Collection at home
+        <input type="radio" name="facillites"/>Comprehensive Health Check
+        </td>
 </tr>
 <tr>
-    <th>Payment</th>
-    <td width="400" colspan="3">cash card online</td>
+    <td>Payment</td>
+    <td colspan="3">
+    <input type="radio" name="facillites"/>Cash 
+    <input type="radio" name="facillites"/>Card 
+    <input type="radio" name="facillites"/>Online
+</td>
 </tr>
 <tr>
-    <td><input type="submit"  value="Submit"/></td>
-    <td colspan="3"><input type="reset" value="Cancel"/></td>
+    <td colspan="5">
+    <input type="submit"  value="Register"/>
+    <input type="reset" value="Cancel"/>
+    </td>
 </tr>
 </table>
 </form>
 </body>
+</html>
