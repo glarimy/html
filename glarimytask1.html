@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head> 
-            <title>glarimy task</title>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>GLARIMY-homepage</title>
             <style>
+                div {
+
+  text-align:center;
+  padding-top: 5px;
+  padding-right: 30px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+}
+                
                     body {
-                      background-color: gray;
-                    }
-                    
-                    h2 {
-                      color: black;
+                        background-image:url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) 
+                                 }
+                    div{
+                      color:black;
                       text-align: center;
+                    }
+
+                    #title {
+                        background-image:url(https://cdn.pixabay.com/photo/2017/05/31/11/18/sea-2360076_1280.jpg) 
+                    }
+
+                    .emailid {
+                        color:aquamarine
                     }
     </style>
      </head>
             <body>
-        <h2 style=background-color:aqua;> Glarimy task</h2> 
+        <div style="font-size:300%" id="title"> GLARIMY-ADMIN </div>
         <form>
-            <table>
+            <table> 
                 <tbody>
                     <tr>
-                        <td>Email ID:</td>
-                    <td colspan="2"><input type="text" name="emailid"/></td>
-                </tr>
-                <tr>
-                        <td>Password:</td>
-                        <td><input type="text" name="password"/></td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="submit" value="Login"/>
-                    </td>
-                    <td>
-                            <input type="submit" value="Forgot password?"/>
-                    </td>
+                        <div class="emailid">Email ID:<input placeholder="email" type="text" name="emailid"/></div>
+                    </tr>
+                   <tr>
+                        <div class="emailid">Password:<input placeholder="password" type="text" name="password"/></div>
                 </tr>
                 </tbody>
             </table>
+<div>
+    <button>Login</button>
+    <button>Forgot Password</button>
+</div>
         </form>
     </body>
 </html>
